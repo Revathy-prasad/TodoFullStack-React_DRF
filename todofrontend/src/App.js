@@ -6,7 +6,7 @@ function App() {
   const [todos, setTodos] = useState([]);
   const [formData, setFormData] = useState({ title: "", completed: false });
   const [editId, setEditId] = useState(null);
-  const API_URL = "http://127.0.0.1:8000/api/todos/";
+  const API_URL = process.env.REACT_APP_API_URL || "http://127.0.0.1:8000/api/todos/";
 
   useEffect(() => {
     fetchTodos();
