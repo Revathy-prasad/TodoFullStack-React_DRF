@@ -25,7 +25,13 @@ SECRET_KEY = 'django-insecure-=gzi(xny3ha=%gi3yrg7ix9tx&ym%#n6!2+(xyznyj$%i#j$^0
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+# settings.py
+
+ALLOWED_HOSTS = ['revathyarjun.pythonanywhere.com']
+
+CORS_ALLOWED_ORIGINS = [
+    "https://todo-full-stack-react-drf.vercel.app", 
+]
 
 
 # Application definition
